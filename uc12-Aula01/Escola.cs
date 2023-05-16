@@ -32,12 +32,19 @@ namespace uc12_Aula01
         }               // 03 .709 .814/0001 -98
         public Boolean setCnpj(String cnpj)
         {
-            this.cnpj = this.limpaCnpj(cnpj);
-            return true;
+            if (this.ValidaCNPJ(cnpj))
+            {
+                this.cnpj = this.limpaCnpj(cnpj);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         private String limpaCnpj(String cnpj)
         {
-            return String.Join("", System.Text.RegularExpressions.Regex.Split(cnpj, @"[^\d]"));
+            return String.Join("", System.Text.RegularExpressions.Regex.Split(cnpj, @"[^\d]"));//0-9
         }
         public bool ValidaCNPJ(string vrCNPJ)
         {

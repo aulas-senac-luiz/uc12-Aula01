@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,24 +18,13 @@ namespace uc12_Aula01
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            Escola e1 = new Escola("Senac Santana - ANA", "03.709.814/ddasdaasdasvxcvxc0001-98", "Rua Voluntários da Pátria, 3167, Santana");
+            /*BancoDeDados bd = new BancoDeDados();
+            MySqlConnection con = bd.conectar();
+            string sql = "insert into teste.aluno(a,b) values(2,3);";
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MessageBox.Show(cmd.ExecuteNonQuery().ToString());*/
             
-            if (e1.getCnpj()==null)
-            {
-                MessageBox.Show("CNPJ Inválido");
-                return;
-            }
-
-            Escola e2 = new Escola();
-
-            e2.nome = "Senac Aclimação";
-            e2.endereco = "R. Pires da Mota, 838";
-            e2.setCnpj("03.709.81dsadsadsadas4 / 0073 - 62");
-            Application.Run(new FrmEscola(e2));
-
-       
-            
-            
+            Application.Run(new Inicio());
 
         }
     }

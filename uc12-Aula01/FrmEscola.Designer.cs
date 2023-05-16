@@ -78,6 +78,7 @@ namespace uc12_Aula01
             this.txtCnpj.Name = "txtCnpj";
             this.txtCnpj.Size = new System.Drawing.Size(260, 20);
             this.txtCnpj.TabIndex = 4;
+            this.txtCnpj.TextChanged += new System.EventHandler(this.txtCnpj_TextChanged);
             // 
             // txtEndereco
             // 
@@ -110,6 +111,7 @@ namespace uc12_Aula01
             this.Controls.Add(this.label1);
             this.Name = "FrmEscola";
             this.Text = "Escola";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Encerrar);
             this.Load += new System.EventHandler(this.FrmEscola_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -24,5 +24,16 @@ namespace uc12_Aula01
         {
 
         }
+
+        private void Encerrar(object sender, FormClosedEventArgs e)
+        {
+            Inicio telaAnterior = new Inicio();
+            telaAnterior.Show();
+        }
+
+        private void txtCnpj_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
