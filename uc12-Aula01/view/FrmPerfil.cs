@@ -12,7 +12,7 @@ namespace uc12_Aula01
 {
     public partial class FrmPerfil : Form
     {
-        Pessoa pessoa;
+        Pessoa pessoa;//this
         public FrmPerfil(Pessoa p)
         {
             InitializeComponent();
@@ -21,7 +21,8 @@ namespace uc12_Aula01
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            frmProfessor tela = new frmProfessor(this.pessoa);
+            tela.Show();
         }
     }
 }

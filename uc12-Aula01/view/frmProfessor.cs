@@ -12,9 +12,12 @@ namespace uc12_Aula01
 {
     public partial class frmProfessor : Form
     {
-        public frmProfessor()
+        public frmProfessor(Pessoa p)
         {
             InitializeComponent();
+            this.txtNome.Text = p.Nome;
+            this.txtCpf.Text = p.Cpf;
+            this.txtNomeSocial.Text = p.NomeSocial;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -23,6 +26,11 @@ namespace uc12_Aula01
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
 
         }

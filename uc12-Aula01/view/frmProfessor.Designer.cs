@@ -36,9 +36,11 @@ namespace uc12_Aula01
             this.label3 = new System.Windows.Forms.Label();
             this.txtNomeSocial = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTitulacao = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtFormacao = new System.Windows.Forms.TextBox();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNome
@@ -103,13 +105,12 @@ namespace uc12_Aula01
             this.label4.TabIndex = 7;
             this.label4.Text = "Titulação";
             // 
-            // textBox1
+            // txtTitulacao
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(110, 158);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtTitulacao.Location = new System.Drawing.Point(110, 158);
+            this.txtTitulacao.Name = "txtTitulacao";
+            this.txtTitulacao.Size = new System.Drawing.Size(147, 20);
+            this.txtTitulacao.TabIndex = 6;
             // 
             // label5
             // 
@@ -120,23 +121,43 @@ namespace uc12_Aula01
             this.label5.TabIndex = 9;
             this.label5.Text = "Formação";
             // 
-            // textBox2
+            // txtFormacao
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(110, 184);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtFormacao.Location = new System.Drawing.Point(110, 184);
+            this.txtFormacao.Name = "txtFormacao";
+            this.txtFormacao.Size = new System.Drawing.Size(147, 20);
+            this.txtFormacao.TabIndex = 8;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(182, 229);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 10;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(95, 40);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Professor";
             // 
             // frmProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 331);
+            this.ClientSize = new System.Drawing.Size(315, 302);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtFormacao);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTitulacao);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNomeSocial);
             this.Controls.Add(this.label2);
@@ -159,8 +180,10 @@ namespace uc12_Aula01
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNomeSocial;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTitulacao;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtFormacao;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Label label6;
     }
 }

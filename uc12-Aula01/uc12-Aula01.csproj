@@ -89,45 +89,54 @@
     <Compile Include="Aluno.cs" />
     <Compile Include="BancoDeDados.cs" />
     <Compile Include="DC_Escola.cs" />
-    <Compile Include="Escola.cs" />
-    <Compile Include="FormPessoa.cs">
+    <Compile Include="model\Escola.cs" />
+    <Compile Include="view\FormPessoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPessoa.Designer.cs">
+    <Compile Include="view\FormPessoa.Designer.cs">
       <DependentUpon>FormPessoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEscola.cs">
+    <Compile Include="view\FrmEscola.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEscola.Designer.cs">
+    <Compile Include="view\FrmEscola.Designer.cs">
       <DependentUpon>FrmEscola.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPerfil.cs">
+    <Compile Include="view\FrmPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPerfil.Designer.cs">
+    <Compile Include="view\FrmPerfil.Designer.cs">
       <DependentUpon>FrmPerfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.cs">
+    <Compile Include="view\frmProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.cs">
+    <Compile Include="view\frmProfessor.Designer.cs">
+      <DependentUpon>frmProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pessoa.cs" />
-    <Compile Include="Professor.cs" />
+    <Compile Include="model\Pessoa.cs" />
+    <Compile Include="model\Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormPessoa.resx">
+    <EmbeddedResource Include="view\FormPessoa.resx">
       <DependentUpon>FormPessoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEscola.resx">
+    <EmbeddedResource Include="view\FrmEscola.resx">
       <DependentUpon>FrmEscola.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPerfil.resx">
+    <EmbeddedResource Include="view\FrmPerfil.resx">
       <DependentUpon>FrmPerfil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio.resx">
+    <EmbeddedResource Include="view\frmProfessor.resx">
+      <DependentUpon>frmProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
